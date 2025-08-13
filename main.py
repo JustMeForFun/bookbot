@@ -1,3 +1,5 @@
+# Imports the word_count function from stats.py
+from stats import word_count
 
 # Sets a path for the frankenstein text file 
 frankenstein_path = "books/frankenstein.txt"
@@ -11,11 +13,5 @@ def get_book_text(filepath):
     
     with open(filepath) as f:
         return f.read()
-
-# Counts the amount of words in a given string    
-def word_count(text):
-    
-    word_list = text.split()
-    return len(word_list)
     
 main()
